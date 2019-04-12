@@ -3,7 +3,7 @@
     {
         var ab = document.createElement("script");
         ab.setAttribute("type", "text/javascript");
-        ab.setAttribute("src", "http" + (("https:" === document.location.protocol) ? "s" : null) + 
+        ab.setAttribute("src", "http" + (("https:" === document.location.protocol) ? "s" : "") + 
             "://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML");
         head.appendChild(ab);
     }

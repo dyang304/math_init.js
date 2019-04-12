@@ -1,5 +1,5 @@
 (function(head) {
-    if ((window.MathJax === undefined) || (typeof window["MathJax"] === "undefined"))
+    if ((window.MathJax === undefined) || (typeof window.MathJax === "undefined"))
     {
         var ab = document.createElement("script");
         ab.setAttribute("type", "text/javascript");
@@ -11,16 +11,16 @@
     var cd = document.createElement("script");
     cd.setAttribute("type", "text/x-mathjax-config");
     cd.innerText = 
-        "MathJax.Hub.Config({\n\t\
-            jax: [\"input/TeX\", \"output\/HTML-CSS\"],\n\t\
-            tex2jax: {\n\t\t\
-                inlineMath: [ [\"$\", \"$\"], [\"\\\\(\", \"\\\\)\"], [\"[;\", \";]\"] ],\n\t\t\
-                displayMath: [ [\"$$\", \"$$\"], [\"\\\\[\", \"\\\\]\"] ],\n\t\t\
-                processEscapes: true\n\t\
-            },\n\t\
-            \"HTML-CSS\": {\n\t\t\
-                fonts: [\"TeX\"]\n\t\
-            }\n\
-        });";
+        "MathJax.Hub.Config({" + 
+            "jax: [\"input/TeX\", \"output\/HTML-CSS\"], " + 
+            "tex2jax: { " + 
+                "inlineMath: [ [\"$\", \"$\"], [\"\\\\(\", \"\\\\)\"], " + 
+                "[\"[;\", \";]\"] ], displayMath: [ [\"$$\", \"$$\"], [\"\\\\[\", \"\\\\]\"] ], " + 
+                "processEscapes: true" + 
+            "}, " + 
+            "\"HTML-CSS\": {" + 
+                "fonts: [\"TeX\"]" + 
+            "} " + 
+        "});";
     head.appendChild(cd);
 })(document.getElementsByTagName("HEAD")[0]);

@@ -18,4 +18,4 @@ $$ ... $$
 \\\[ ... 
 \\\]
 
-If you need to type a dollar sign outside a math formula, use <code>&amp;dollar;</code> instead of a dollar sign to avoid rendering problems.
+If you need to type a dollar sign outside a math formula, use <code>\$</code> instead of just a dollar sign to avoid rendering problems.

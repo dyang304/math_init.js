@@ -14,8 +14,8 @@
         "MathJax.Hub.Config({" + 
             "jax: [\"input/TeX\", \"output\/HTML-CSS\"], " + 
             "tex2jax: { " + 
-                "inlineMath: [ [\"$\", \"$\"], [\"\\\\(\", \"\\\\)\"], " + 
-                "[\"[;\", \";]\"] ], displayMath: [ [\"$$\", \"$$\"], [\"\\\\[\", \"\\\\]\"] ], " + 
+                "inlineMath: [ [\"$\", \"$\"], [\"\\\\(\", \"\\\\)\"], [\"[;\", \";]\"] ], " + 
+                "displayMath: [ [\"$$\", \"$$\"], [\"\\\\[\", \"\\\\]\"] ], " + 
                 "processEscapes: true" + 
             "}, " + 
             "\"HTML-CSS\": {" + 
@@ -23,4 +23,5 @@
             "} " + 
         "});";
     head.appendChild(cd);
+    document.currentScript.remove();
 })(document.getElementsByTagName("HEAD")[0]);
